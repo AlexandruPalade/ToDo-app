@@ -1,0 +1,10 @@
+<div class="main-container">
+  <div class="title">TODO</div>
+  <span *ngFor="let task of tasks">
+    <app-todo [task]="task"></app-todo>
+    <div>
+      <button (click)="onCheckTask(task)">✅</button>
+      <button (click)="onRemoveTask(task)">❌</button>
+    </div>
+  </span>
+</div>

@@ -1,0 +1,30 @@
+.main-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+input {
+  width: 50vw;
+  height: 7vh;
+  font-size: 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #efefef;
+}
+
+input:placeholder-shown {
+  color: #6a6a6a;
+  font-weight: bolder;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bolder;
+  width: 5vw;
+  height: 7vh;
+  background-color: #ffb300;
+  border: 0;
+  border-radius: 3px;
+}

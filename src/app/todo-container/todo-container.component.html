@@ -1,0 +1,13 @@
+<div class="main-container">
+  <div class="add-container">
+    <app-add-todo (taskAdded)="onTaskAdded($event)"></app-add-todo>
+  </div>
+  <div class="task-container">
+    <app-todos
+      [tasks]="tasks"
+      (checkTask)="onTaskChecked($event)"
+      (removeTask)="onTaskRemove($event)"
+    ></app-todos>
+    <app-done-todos [checkTasks]="checkTasks"></app-done-todos>
+  </div>
+</div>
